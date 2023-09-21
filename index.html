@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Window</title>
+    <style>
+        /* Css here  */
+        .innerbox1 {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(6, 186, 6);
+            color: white;
+        }
+
+        .innerbox2 {
+            width: 100%;
+            height: 150px;
+            background-color: red;
+            color: white;
+        }
+
+        .outerbox {
+            width: 100%;
+            height: 475px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .leftbox {
+            width: 50%;
+            height: 475px;
+        }
+
+        .rightbox {
+            width: 25%;
+            height: 475px;
+            background-color: rgb(255, 231, 255);
+            color: black;
+            font-size: 25px;
+            padding-left: 10px;
+        }
+
+        .Rishitha {
+            font-size: 20px;
+            padding-bottom: 20px;
+            padding-left: 9px;
+        }
+
+        .hi {
+            width: 100%;
+            background-color: rgb(4, 232, 4);
+            color: white;
+            border-color: transparent;
+        }
+
+        .by {
+            width: 100%;
+            background-color: red;
+            color: white;
+            border-color: transparent;
+        }
+
+        @media only screen and (max-width:500px) {
+            .outerbox {
+                width: 100%;
+                height: 475px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .leftbox {
+                width: 100%;
+                height: 475px;
+            }
+
+            .rightbox {
+                width: auto;
+                height: 475px;
+                background-color: rgb(255, 231, 255);
+                color: black;
+                font-size: 25px;
+                padding-left: 10px;
+            }
+
+        }
+
+        .leftbox img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- html here -->
+    <div class="innerbox1">
+        <h1>
+            <bold>AI Summit: Chat Window</bold>
+        </h1>
+    </div><br>
+    <div class="innerbox2">
+        <H2>
+            <bold>Welcome to AI Summit Portal</bold>
+        </H2><br>
+        Click on the button on the bottom of this page to open the chat form. Note that the button and the form is
+        fixed-they will always be positioned to the bottom of the window.
+    </div><br><br>
+    <div class="outerbox">
+        <div class="leftbox">
+            <img src="./FcZluO4XEAMRvBT-696x453.jpg" alt="">
+        </div>
+        <div class="rightbox">
+            <h1>Chat</h1>
+            <h2 class="Rishitha">Message</h2>
+            <textarea name="AI Summit Chat Window" id="Text Area" cols="45" rows="10"></textarea>
+            <button class="hi">Send</button>
+            <button class="by">Close</button>
+        </div>
+    </div>
+</body>
+
+</html>
